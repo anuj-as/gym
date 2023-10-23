@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: montserrat, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#navbar{
+    height: 17%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    z-index: 99;
+    position: fixed;
+    color: white;
+}
+#navbar img{
+    height: 100%;    
+    animation:mov 4s linear infinite;
+}
+@keyframes mov {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(359deg);
+        filter: invert();
+    }
+}
+#bg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#set{
+    /* font-size: 20px; */
+    position: absolute;
+    top: 26%;
+    left: 12%;
+}
+#set ol li{
+    font-size: 50px;
+    /* color: rgb(157, 154, 154); */
+}
+footer{
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    top: 97%;
+    left: 30%;
+}
